@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="shipselect.js"></script>
+		<style>
+      .set{
+        border: none;
+        overflow-y: scroll;
+      }
+      .set::-webkit-scrollbar {
+          display: none;
+      }
+      .set{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+		</style>
+	</head>
+	<body class="set">
+		<div>
+			<table border="0" style="font-size:21px;font-family:DFKai-sb;">
+				<tr>
+					<td>
+						<div style="width:70px;height:20px;display: inline-block;"><input type="checkbox" id="c1" onchange="ticked()" checked="checked" />黑鋒</div>
+						<div style="width:70px;height:20px;display: inline-block;"><input type="checkbox" id="c2" onchange="ticked()" checked="checked" />薔薇</div>
+						<div style="width:70px;height:20px;display: inline-block;"><input type="checkbox" id="c3" onchange="ticked()" checked="checked" />神代</div>
+						<div style="width:70px;height:20px;display: inline-block;"><input type="checkbox" id="c4" onchange="ticked()" checked="checked" />銀翼</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div style="width:70px;height:30px;display: inline-block;"><input type="checkbox" id="k1" onchange="ticked()" checked="checked" />驅逐</div>
+						<div style="width:70px;height:30px;display: inline-block;"><input type="checkbox" id="k2" onchange="ticked()" checked="checked" />輕巡</div>
+						<div style="width:70px;height:30px;display: inline-block;"><input type="checkbox" id="k3" onchange="ticked()" checked="checked" />重巡</div>
+						<div style="width:70px;height:30px;display: inline-block;"><input type="checkbox" id="k4" onchange="ticked()" checked="checked" />戰艦</div>
+						<div style="width:70px;height:30px;display: inline-block;"><input type="checkbox" id="k5" onchange="ticked()" checked="checked" />航母</div>
+					</td>
+				</tr>
+			</table>
+			<div id="ships">
+				<a href="info.html?002" target="_blank" class="tooltip"><img class="scrollLoading" name="35" src="icons/002.png" style="width:100px;height:100px;" title="" alt="赤城" /></a>
+				<a href="info.html?003" target="_blank" class="tooltip"><img class="scrollLoading" name="35" src="icons/003.png" style="width:100px;height:100px;" title="" alt="加賀" /></a>
+				<a href="info.html?004" target="_blank" class="tooltip"><img class="scrollLoading" name="35" src="icons/004.png" style="width:100px;height:100px;" title="" alt="翔鶴" /></a>
+				<a href="info.html?005" target="_blank" class="tooltip"><img class="scrollLoading" name="35" src="icons/005.png" style="width:100px;height:100px;" title="" alt="瑞鶴" /></a>
+				<a href="info.html?007" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/007.png" style="width:100px;height:100px;" title="" alt="薩拉托加" /></a>
+				<a href="info.html?008" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/008.png" style="width:100px;height:100px;" title="" alt="企業" /></a>
+				<a href="info.html?009" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/009.png" style="width:100px;height:100px;" title="" alt="約克鎮" /></a>
+				<a href="info.html?010" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/010.png" style="width:100px;height:100px;" title="" alt="大黃蜂" /></a>
+				<a href="info.html?011" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/011.png" style="width:100px;height:100px;" title="" alt="胡蜂" /></a>
+				<a href="info.html?012" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/012.png" style="width:100px;height:100px;" title="" alt="好人理查" /></a>
+				<a href="info.html?013" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/013.png" style="width:100px;height:100px;" title="" alt="艾賽克斯" /></a>
+				<a href="info.html?014" target="_blank" class="tooltip"><img class="scrollLoading" name="25" src="icons/014.png" style="width:100px;height:100px;" title="" alt="皇家方舟" /></a>
+				<a href="info.html?016" target="_blank" class="tooltip"><img class="scrollLoading" name="35" src="icons/016.png" style="width:100px;height:100px;" title="" alt="千歲" /></a>
+				<a href="info.html?017" target="_blank" class="tooltip"><img class="scrollLoading" name="35" src="icons/017.png" style="width:100px;height:100px;" title="" alt="千代田" /></a>
+				<a href="info.html?018" target="_blank" class="tooltip"><img class="scrollLoading" name="35" src="icons/018.png" style="width:100px;height:100px;" title="" alt="飛鷹" /></a>
+				<a href="info.html?020" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/020.png" style="width:100px;height:100px;" title="" alt="蘭利" /></a>
+				<a href="info.html?021" target="_blank" class="tooltip"><img class="scrollLoading" name="25" src="icons/021.png" style="width:100px;height:100px;" title="" alt="獨角獸" /></a>
+				<a href="info.html?022" target="_blank" class="tooltip"><img class="scrollLoading" name="25" src="icons/022.png" style="width:100px;height:100px;" title="" alt="競技神" /></a>
+				<a href="info.html?024" target="_blank" class="tooltip"><img class="scrollLoading" name="34" src="icons/024.png" style="width:100px;height:100px;" title="" alt="金剛" /></a>
+				<a href="info.html?025" target="_blank" class="tooltip"><img class="scrollLoading" name="34" src="icons/025.png" style="width:100px;height:100px;" title="" alt="比叡" /></a>
+				<a href="info.html?028" target="_blank" class="tooltip"><img class="scrollLoading" name="34" src="icons/028.png" style="width:100px;height:100px;" title="" alt="扶桑" /></a>
+				<a href="info.html?029" target="_blank" class="tooltip"><img class="scrollLoading" name="34" src="icons/029.png" style="width:100px;height:100px;" title="" alt="山城" /></a>
+				<a href="info.html?032" target="_blank" class="tooltip"><img class="scrollLoading" name="44" src="icons/032.png" style="width:100px;height:100px;" title="" alt="南達科他" /></a>
+				<a href="info.html?033" target="_blank" class="tooltip"><img class="scrollLoading" name="44" src="icons/033.png" style="width:100px;height:100px;" title="" alt="北卡羅萊納" /></a>
+				<a href="info.html?034" target="_blank" class="tooltip"><img class="scrollLoading" name="44" src="icons/034.png" style="width:100px;height:100px;" title="" alt="科羅拉多" /></a>
+				<a href="info.html?035" target="_blank" class="tooltip"><img class="scrollLoading" name="44" src="icons/035.png" style="width:100px;height:100px;" title="" alt="懷俄明" /></a>
+				<a href="info.html?036" target="_blank" class="tooltip"><img class="scrollLoading" name="44" src="icons/036.png" style="width:100px;height:100px;" title="" alt="賓夕法尼亞" /></a>
+				<a href="info.html?037" target="_blank" class="tooltip"><img class="scrollLoading" name="24" src="icons/037.png" style="width:100px;height:100px;" title="" alt="胡德" /></a>
+				<a href="info.html?038" target="_blank" class="tooltip"><img class="scrollLoading" name="24" src="icons/038.png" style="width:100px;height:100px;" title="" alt="伊莉莎白女王" /></a>
+				<a href="info.html?041" target="_blank" class="tooltip"><img class="scrollLoading" name="24" src="icons/041.png" style="width:100px;height:100px;" title="" alt="納爾遜" /></a>
+				<a href="info.html?042" target="_blank" class="tooltip"><img class="scrollLoading" name="24" src="icons/042.png" style="width:100px;height:100px;" title="" alt="英王喬治五世" /></a>
+				<a href="info.html?043" target="_blank" class="tooltip"><img class="scrollLoading" name="24" src="icons/043.png" style="width:100px;height:100px;" title="" alt="威爾士親王" /></a>
+				<a href="info.html?045" target="_blank" class="tooltip"><img class="scrollLoading" name="14" src="icons/045.png" style="width:100px;height:100px;" title="" alt="沙恩霍斯特" /></a>
+				<a href="info.html?047" target="_blank" class="tooltip"><img class="scrollLoading" name="33" src="icons/047.png" style="width:100px;height:100px;" title="" alt="妙高" /></a>
+				<a href="info.html?048" target="_blank" class="tooltip"><img class="scrollLoading" name="33" src="icons/048.png" style="width:100px;height:100px;" title="" alt="那智" /></a>
+				<a href="info.html?049" target="_blank" class="tooltip"><img class="scrollLoading" name="33" src="icons/049.png" style="width:100px;height:100px;" title="" alt="足柄" /></a>
+				<a href="info.html?050" target="_blank" class="tooltip"><img class="scrollLoading" name="33" src="icons/050.png" style="width:100px;height:100px;" title="" alt="羽黑" /></a>
+				<a href="info.html?051" target="_blank" class="tooltip"><img class="scrollLoading" name="33" src="icons/051.png" style="width:100px;height:100px;" title="" alt="高雄" /></a>
+				<a href="info.html?052" target="_blank" class="tooltip"><img class="scrollLoading" name="33" src="icons/052.png" style="width:100px;height:100px;" title="" alt="愛宕" /></a>
+				<a href="info.html?054" target="_blank" class="tooltip"><img class="scrollLoading" name="33" src="icons/054.png" style="width:100px;height:100px;" title="" alt="鳥海" /></a>
+				<a href="info.html?055" target="_blank" class="tooltip"><img class="scrollLoading" name="33" src="icons/055.png" style="width:100px;height:100px;" title="" alt="最上" /></a>
+				<a href="info.html?058" target="_blank" class="tooltip"><img class="scrollLoading" name="43" src="icons/058.png" style="width:100px;height:100px;" title="" alt="北安普頓" /></a>
+				<a href="info.html?059" target="_blank" class="tooltip"><img class="scrollLoading" name="43" src="icons/059.png" style="width:100px;height:100px;" title="" alt="彭薩科拉" /></a>
+				<a href="info.html?060" target="_blank" class="tooltip"><img class="scrollLoading" name="23" src="icons/060.png" style="width:100px;height:100px;" title="" alt="諾福克" /></a>
+				<a href="info.html?063" target="_blank" class="tooltip"><img class="scrollLoading" name="23" src="icons/063.png" style="width:100px;height:100px;" title="" alt="薩福克" /></a>
+				<a href="info.html?064" target="_blank" class="tooltip"><img class="scrollLoading" name="13" src="icons/064.png" style="width:100px;height:100px;" title="" alt="希佩爾" /></a>
+				<a href="info.html?065" target="_blank" class="tooltip"><img class="scrollLoading" name="13" src="icons/065.png" style="width:100px;height:100px;" title="" alt="布呂歇爾" /></a>
+				<a href="info.html?066" target="_blank" class="tooltip"><img class="scrollLoading" name="13" src="icons/066.png" style="width:100px;height:100px;" title="" alt="歐根親王" /></a>
+				<a href="info.html?067" target="_blank" class="tooltip"><img class="scrollLoading" name="13" src="icons/067.png" style="width:100px;height:100px;" title="" alt="塞德利茨" /></a>
+				<a href="info.html?068" target="_blank" class="tooltip"><img class="scrollLoading" name="13" src="icons/068.png" style="width:100px;height:100px;" title="" alt="呂佐夫" /></a>
+				<a href="info.html?069" target="_blank" class="tooltip"><img class="scrollLoading" name="32" src="icons/069.png" style="width:100px;height:100px;" title="" alt="夕張" /></a>
+				<a href="info.html?070" target="_blank" class="tooltip"><img class="scrollLoading" name="32" src="icons/070.png" style="width:100px;height:100px;" title="" alt="川內" /></a>
+				<a href="info.html?076" target="_blank" class="tooltip"><img class="scrollLoading" name="42" src="icons/076.png" style="width:100px;height:100px;" title="" alt="亞特蘭大" /></a>
+				<a href="info.html?077" target="_blank" class="tooltip"><img class="scrollLoading" name="42" src="icons/077.png" style="width:100px;height:100px;" title="" alt="朱諾" /></a>
+				<a href="info.html?078" target="_blank" class="tooltip"><img class="scrollLoading" name="42" src="icons/078.png" style="width:100px;height:100px;" title="" alt="克里夫蘭" /></a>
+				<a href="info.html?080" target="_blank" class="tooltip"><img class="scrollLoading" name="42" src="icons/080.png" style="width:100px;height:100px;" title="" alt="哥倫比亞" /></a>
+				<a href="info.html?082" target="_blank" class="tooltip"><img class="scrollLoading" name="42" src="icons/082.png" style="width:100px;height:100px;" title="" alt="海倫娜" /></a>
+				<a href="info.html?083" target="_blank" class="tooltip"><img class="scrollLoading" name="42" src="icons/083.png" style="width:100px;height:100px;" title="" alt="弗林特" /></a>
+				<a href="info.html?084" target="_blank" class="tooltip"><img class="scrollLoading" name="22" src="icons/084.png" style="width:100px;height:100px;" title="" alt="利安德" /></a>
+				<a href="info.html?085" target="_blank" class="tooltip"><img class="scrollLoading" name="22" src="icons/085.png" style="width:100px;height:100px;" title="" alt="海王星" /></a>
+				<a href="info.html?086" target="_blank" class="tooltip"><img class="scrollLoading" name="22" src="icons/086.png" style="width:100px;height:100px;" title="" alt="愛丁堡" /></a>
+				<a href="info.html?089" target="_blank" class="tooltip"><img class="scrollLoading" name="12" src="icons/089.png" style="width:100px;height:100px;" title="" alt="萊比錫" /></a>
+				<a href="info.html?090" target="_blank" class="tooltip"><img class="scrollLoading" name="12" src="icons/090.png" style="width:100px;height:100px;" title="" alt="紐倫堡" /></a>
+				<a href="info.html?091" target="_blank" class="tooltip"><img class="scrollLoading" name="12" src="icons/091.png" style="width:100px;height:100px;" title="" alt="柯尼斯堡" /></a>
+				<a href="info.html?094" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/094.png" style="width:100px;height:100px;" title="" alt="陽炎" /></a>
+				<a href="info.html?095" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/095.png" style="width:100px;height:100px;" title="" alt="不知火" /></a>
+				<a href="info.html?096" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/096.png" style="width:100px;height:100px;" title="" alt="親潮" /></a>
+				<a href="info.html?100" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/100.png" style="width:100px;height:100px;" title="" alt="荻風" /></a>
+				<a href="info.html?101" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/101.png" style="width:100px;height:100px;" title="" alt="曉" /></a>
+				<a href="info.html?102" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/102.png" style="width:100px;height:100px;" title="" alt="響" /></a>
+				<a href="info.html?105" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/105.png" style="width:100px;height:100px;" title="" alt="白露" /></a>
+				<a href="info.html?108" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/108.png" style="width:100px;height:100px;" title="" alt="夕立" /></a>
+				<a href="info.html?109" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/109.png" style="width:100px;height:100px;" title="" alt="早霜" /></a>
+				<a href="info.html?110" target="_blank" class="tooltip"><img class="scrollLoading" name="41" src="icons/110.png" style="width:100px;height:100px;" title="" alt="弗萊徹" /></a>
+				<a href="info.html?111" target="_blank" class="tooltip"><img class="scrollLoading" name="41" src="icons/111.png" style="width:100px;height:100px;" title="" alt="馬漢" /></a>
+				<a href="info.html?112" target="_blank" class="tooltip"><img class="scrollLoading" name="41" src="icons/112.png" style="width:100px;height:100px;" title="" alt="卡辛" /></a>
+				<a href="info.html?113" target="_blank" class="tooltip"><img class="scrollLoading" name="41" src="icons/113.png" style="width:100px;height:100px;" title="" alt="唐斯" /></a>
+				<a href="info.html?119" target="_blank" class="tooltip"><img class="scrollLoading" name="41" src="icons/119.png" style="width:100px;height:100px;" title="" alt="康納" /></a>
+				<a href="info.html?120" target="_blank" class="tooltip"><img class="scrollLoading" name="41" src="icons/120.png" style="width:100px;height:100px;" title="" alt="戴爾" /></a>
+				<a href="info.html?125" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/125.png" style="width:100px;height:100px;" title="" alt="黃泉" /></a>
+				<a href="info.html?126" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/126.png" style="width:100px;height:100px;" title="" alt="鬥牛犬" /></a>
+				<a href="info.html?127" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/127.png" style="width:100px;height:100px;" title="" alt="小獵犬" /></a>
+				<a href="info.html?128" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/128.png" style="width:100px;height:100px;" title="" alt="小天鵝" /></a>
+				<a href="info.html?129" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/129.png" style="width:100px;height:100px;" title="" alt="命運女神" /></a>
+				<a href="info.html?130" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/130.png" style="width:100px;height:100px;" title="" alt="螢火蟲" /></a>
+				<a href="info.html?131" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/131.png" style="width:100px;height:100px;" title="" alt="標槍" /></a>
+				<a href="info.html?132" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/132.png" style="width:100px;height:100px;" title="" alt="朱比特" /></a>
+				<a href="info.html?134" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/134.png" style="width:100px;height:100px;" title="" alt="吸血鬼" /></a>
+				<a href="info.html?135" target="_blank" class="tooltip"><img class="scrollLoading" name="21" src="icons/135.png" style="width:100px;height:100px;" title="" alt="戰斧" /></a>
+				<a href="info.html?136" target="_blank" class="tooltip"><img class="scrollLoading" name="11" src="icons/136.png" style="width:100px;height:100px;" title="" alt="Z1" /></a>
+				<a href="info.html?137" target="_blank" class="tooltip"><img class="scrollLoading" name="11" src="icons/137.png" style="width:100px;height:100px;" title="" alt="Z3" /></a>
+				<a href="info.html?139" target="_blank" class="tooltip"><img class="scrollLoading" name="11" src="icons/139.png" style="width:100px;height:100px;" title="" alt="Z26" /></a>
+				<a href="info.html?143" target="_blank" class="tooltip"><img class="scrollLoading" name="35" src="icons/143.png" style="width:100px;height:100px;" title="" alt="大和" /></a>
+				<a href="info.html?144" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/144.png" style="width:100px;height:100px;" title="" alt="中途島" /></a>
+				<a href="info.html?145" target="_blank" class="tooltip"><img class="scrollLoading" name="44" src="icons/145.png" style="width:100px;height:100px;" title="" alt="紐約" /></a>
+				<a href="info.html?146" target="_blank" class="tooltip"><img class="scrollLoading" name="45" src="icons/146.png" style="width:100px;height:100px;" title="" alt="香格里拉" /></a>
+				<a href="info.html?147" target="_blank" class="tooltip"><img class="scrollLoading" name="31" src="icons/147.png" style="width:100px;height:100px;" title="" alt="綾波" /></a>
+				<a href="info.html?148" target="_blank" class="tooltip"><img class="scrollLoading" name="25" src="icons/148.png" style="width:100px;height:100px;" title="" alt="光榮" /></a>
+				<a href="info.html?149" target="_blank" class="tooltip"><img class="scrollLoading" name="15" src="icons/149.png" style="width:100px;height:100px;" title="" alt="齊柏林伯爵" /></a>
+			</div>
+		</div>
+	</body>
+</html>

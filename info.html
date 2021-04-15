@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title id="header"></title>
+		<link rel="icon" type="image.png" href="setting/info-icon.png">
+		<script src="materialcalculate.js"></script>
+	</head>
+	<body style="background: #757aac;overflow: hidden;">
+		<script src="shipshow.js"></script>
+		<table style="width: 100%;height: 100%;">
+			<tr>
+				<td style="width: 35%;">
+					<img src="" id="shipinfo1" style="width: 100%;">
+				</td>
+				<td style="width: 30%;text-align: center;font-size: 30px;font-family: DFKai-sb;">
+					<label>艦名:</label><span id="shipname"></span><br>
+					<label>陣營:</label><span id="shipcountry"></span><br>
+					<label>艦種:</label><span id="shiptype"></span><br>
+					<label>羈絆:</label><span id="shipbond"></span><br>
+					<label>滿等屬性:</label><span id="maxlv"></span><br>
+					<label>資源消耗:</label><br>
+					<input id="startlv" type="number" value="1" min="1" max="80" step="1" style="width: 40px;height: 25px;">
+					<input type="checkbox" id="stbt" style="display: none;">
+					<label id="stbtw" style="width: 30%;text-align: center;font-size: 24px;font-family: DFKai-sb;display: none;">未突破</label>
+					<label style="font-weight: 900;">~</label>
+					<input id="endlv" type="number" value="80" min="1" max="80" step="1" style="width: 40px;height: 25px;">
+					<input type="checkbox" id="edbt" style="display: none;">
+					<label id="edbtw" style="width: 30%;text-align: center;font-size: 24px;font-family: DFKai-sb;display: none;">要突破</label><br>
+					<label style="font-size: 25px;">BP:<span id="bp">0</span> 賦絡溶液:<span id="sol">0</span> 奈米元件:<span id="tri">0</span></label>
+				</td>
+				<td style="width: 35%;">
+					<img src="" id="shipinfo2" style="width: 100%;">
+				</td>
+			</tr>
+		</table>
+		<img id="loadingfilm" src="loadingfilm.svg" style="position: absolute;top: 0px;left: 0px;z-index: 1;opacity: 0.85;display: none;">
+		<img id="loadingcircle" class="circle" src="loadingcircle.svg" style="width: 7%;position: absolute;top: 46.5%;left: 46.5%;z-index: 2;opacity: 0.95;display: none;">
+		<label id="loadingword" style="font-family: DFkai-sb; font-size: 35px;position: absolute;top: 62%;left: 45%;z-index: 2;opacity: 1;display: none;">計算中</label>
+		<label id="loadingword1" style="font-family: DFkai-sb; font-size: 35px;position: absolute;top: 62%;left: 52%;z-index: 2;opacity: 1;display: none;">.</label>
+		<label id="loadingword2" style="font-family: DFkai-sb; font-size: 35px;position: absolute;top: 62%;left: 53%;z-index: 2;opacity: 1;display: none;">.</label>
+		<label id="loadingword3" style="font-family: DFkai-sb; font-size: 35px;position: absolute;top: 62%;left: 54%;z-index: 2;opacity: 1;display: none;">.</label>
+	</body>
+</html>
