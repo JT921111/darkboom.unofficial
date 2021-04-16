@@ -2,45 +2,96 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黑潮:深海覺醒 非官方整理表</title>
-    <link rel="icon" type="image.png" href="icons/004.png">
     <style>
-      body {
-        background-image: url("setting/background2.png");
-        background-repeat: repeat-y;
-        background-attachment: fixed;
-        background-size: 100%;
-        overflow: hidden;
+      .set{
+        font-family:DFKai-sb;
+        border: none;
+        overflow-y: scroll;
       }
-
-      .change {
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        background: url("setting/selectarrow.png") no-repeat right center transparent;
-        border: 2px solid #000000;
-        width: 75%;
-        height: 40px;
-        padding-right: 20px;
-        background-color: #757aac;
+      .set::-webkit-scrollbar {
+          display: none;
       }
-    </style>
+      .set{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .mousetouch{
+        transition: 1s;
+      }
+      .mousetouch:hover{
+        width: 100%;
+      }
+		</style>
   </head>
-  <body>
-    <pre>
-
-    </pre>
-    <form name="categories" style="font-size:35px;font-family:DFKai-sb;">
-      <label width="15%">請選擇要搜尋的項目:</label>
-      <select class="change" name="choose" style="font-size:30px;font-family:DFKai-sb;"
-        onchange="document.getElementById('link').src=this.options[this.selectedIndex].value">
-        <option value="home.html" selected></option>
-        <option value="ships.html">人偶圖鑑</option>
-        <option value="drag.html">打撈圖鑑</option>
-        <option value="bonds.html">羈絆</option>
-      </select>
-      <pre></pre>
-      <iframe src="home.html" id="link" width="100%" height="85%" style="border: none;">
-    </form>
+  <body class="set">
+    <label id="home" style="font-size: 35px;">黑潮：深海覺醒</label>
+    <pre></pre>
+    <div style="display: inline-block;vertical-align: top;">
+      <label style="font-size: 30px;">官方連結</label><br>
+      <a href="https://www.facebook.com/DARKBOOM.KOMOE" target="_blank"><img src="http://static.komoejoy.com/Darkboom/gw/pc/assets/images/fb.svg" height="80px"></a>
+      <a href="https://forum.gamer.com.tw/B.php?bsn=39034" target="_blank"><img src="http://static.komoejoy.com/Darkboom/gw/pc/assets/images/baha.svg" height="80px"></a>
+    </div>
+    <div style="float: right;">
+      <label style="font-size: 30px;">遊戲安裝</label><br>
+      <a href="https://hc-ob.onelink.me/w8yp/a95abe7b" target="_blank"><img src="setting/appstore.png" height="70px"></a>
+      <a href="https://hc-ob.onelink.me/vdvu/41474758" target="_blank"><img src="setting/googleplay.png" height="70px"></a>
+    </div>
+    <table id="character" style="width: 80%;height: 90%;" align="center">
+      <tr>
+        <td style="width: 20%;">
+          <div style="display: flex;justify-self: space-around;">
+            <li style="list-style: none;">
+              <img src="setting/黑鋒.png" width="40%">
+              <a href="info.html?068" target="_blank">
+                <aside><img src="setting/068.png" width="90%" class="mousetouch"></aside>
+              </a>
+            </li>
+          </div>
+        </td>
+        <td style="width: 20%;">
+          <div style="display: flex;justify-self: space-around;">
+            <li style="list-style: none;">
+              <img src="setting/薔薇.png" width="40%">
+              <a href="info.html?037" target="_blank">
+                <aside><img src="setting/037.png" width="90%" class="mousetouch"></aside>
+              </a>
+            </li>
+          </div>
+        </td>
+        <td style="width: 20%;">
+          <div style="display: flex;justify-self: space-around;">
+            <li style="list-style: none;">
+              <img src="setting/神代.png" width="40%">
+              <a href="info.html?005" target="_blank">
+                <aside><img src="setting/005.png" width="90%" class="mousetouch"></aside> 
+              </a>
+            </li>
+          </div>
+        </td>
+        <td style="width: 20%;">
+          <div style="display: flex;justify-self: space-around;">
+            <li style="list-style: none;">
+              <img src="setting/銀翼.png" width="40%">
+              <a href="info.html?008" target="_blank">
+                <aside><img src="setting/008.png" width="90%" class="mousetouch"></aside>
+              </a>
+            </li>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div id="story" style="position: relative;display: flex;justify-content: space-around;">
+      <div style="position: absolute;top: 11vh;z-index: 1; width: 54%;font-size: 4.7vh;">
+        <p>
+          近未來的某一天，人類驚恐地發現艦船無法在海面上航行，一切無機物都會被大海吞沒。至此，航母集群的時代成為歷史，將少女之姿和戰艦火力相結合的人偶技術登上世界舞臺。憑藉這項技術，四大勢力迅速崛起，世界在相互制衡中維持著表面的「和平」。
+        </p>
+        <p>
+          但隨著人偶出現原因不明的異變，各大勢力稱異變人偶為【怪物】，對她們或畏懼而敬若神明；或憤怒而強加迫害；或恐慌而選擇囚禁……異變的人偶少女，是屈從於這不公的世界在夾縫中求生，還是就此反抗撕開虛僞的和平假象？請率領被遺棄的她們共同改寫命運，對抗世界吧！
+        </p>
+      </div>
+      <div style="position: absolute;top: 0vh;z-index: 0; width: 69%;">
+        <img src="boarder.svg" style="opacity: 0.8;">
+      </div>
+    </div>
   </body>
 </html>
